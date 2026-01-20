@@ -1,0 +1,19 @@
+@use "../core" as *;
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  &__link {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dnt-ap-header-link);
+    cursor: pointer;
+    transition: .2s ease;
+
+    &:hover {
+      color: var(--dnt-ap-header-link-hover);
+    }
+  }
+}

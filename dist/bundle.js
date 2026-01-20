@@ -1,0 +1,1 @@
+(()=>{"use strict";const n=function(){function n(){this.init()}return n.prototype.init=function(){},n}();document.addEventListener("DOMContentLoaded",function(){new n})})();

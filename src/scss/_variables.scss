@@ -1,0 +1,97 @@
+// Basic
+$font-main: 'Arial', sans-serif;
+$size-mobile: 1199;
+
+// Colors
+$background-white: #FFFFFF;
+$background-black: #000000;
+$white: #FFFFFF;
+$black: #000000;
+$black-hover: rgba(0, 0, 0, 0.2);
+$gray: #D9D9D9;
+$gray-dark: #606060;
+$gray-accent: #9E9E9E;
+$gray-light: #F3F3F3;
+$demo-bg: #EDEDED;
+
+:root {
+  --dnt-ap-c-background: #{$background-white};
+  --dnt-ap-c-white: #{$white};
+  --dnt-ap-c-black: #{$black};
+  --dnt-ap-c-gray: #{$gray};
+  --dnt-ap-c-gray-dark: #{$gray-dark};
+
+  --dnt-ap-container-width: 1240px;
+  --dnt-ap-container-padding: 0 20px;
+
+  --dnt-ap-grid-gap: 20px;
+  --dnt-ap-grid-gap-mob: 20px;
+
+  --dnt-ap-header-bg: #{$white};
+  --dnt-ap-header-link: #{$gray-dark};
+  --dnt-ap-header-link-hover: #{$gray};
+
+  --dnt-ap-button-bg: #{$gray};
+  --dnt-ap-button-shadow: #{$gray-dark};
+  --dnt-ap-button-border: #{$gray-dark};
+  --dnt-ap-button-border-active: #{$gray-dark};
+
+  --dnt-ap-checkbox-icon: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxOCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3IDFMNiAxMkwxIDciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=);
+  --dnt-ap-checkbox-bg: #{$white};
+  --dnt-ap-checkbox-bg-active: #{$white};
+  --dnt-ap-checkbox-border: #{$gray};
+  --dnt-ap-checkbox-border-active: #{$gray-dark};
+
+  --dnt-ap-input-text: #{$black};
+  --dnt-ap-input-border: #{$black};
+
+  --dnt-ap-search-icon-bg: #{$gray-light};
+  --dnt-ap-search-bg: #{$gray};
+  --dnt-ap-search-placeholder: #{$gray-dark};
+  --dnt-ap-search-text: #{$black};
+
+  --dnt-ap-select-text: #{$black};
+  --dnt-ap-select-bg: #{$gray};
+  --dnt-ap-select-bg-hover: #{$black-hover};
+  --dnt-ap-select-icon-arrow: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuNSA4LjAzODg0TDEwIDEzLjk2MTlMMTUuNSA4LjAzODg0IiBzdHJva2U9IiMxMTExMTEiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
+  --dnt-ap-select-icon-arrow-active: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuNSAxMS45NjEyTDEwIDYuMDM4MDlMMTUuNSAxMS45NjEyIiBzdHJva2U9IiMxMTExMTEiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
+  --dnt-ap-select-icon-filter: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuNSA2LjMwOTgxSDQuNDMxMDNNMTAuODc5NCA2LjMwOTgxSDE4LjUwMDFNMS41IDE1LjY4OTFIMTAuMjkzMU0xNi43NDEzIDE1LjY4OTFIMTguNDk5OU0xMC4yOTMzIDYuMzA5ODFDMTAuMjkzMyA3Ljc2NjcgOS4xMTIyOCA4Ljk0Nzc0IDcuNjU1MzkgOC45NDc3NEM2LjE5ODUgOC45NDc3NCA1LjAxNzQ2IDcuNzY2NyA1LjAxNzQ2IDYuMzA5ODFDNS4wMTc0NiA0Ljg1MjkyIDYuMTk4NSAzLjY3MTg4IDcuNjU1MzkgMy42NzE4OEM5LjExMjI4IDMuNjcxODggMTAuMjkzMyA0Ljg1MjkyIDEwLjI5MzMgNi4zMDk4MVpNMTYuMTU1MiAxNS42ODkxQzE2LjE1NTIgMTcuMTQ2IDE0Ljk3NDIgMTguMzI3MSAxMy41MTczIDE4LjMyNzFDMTIuMDYwNCAxOC4zMjcxIDEwLjg3OTQgMTcuMTQ2IDEwLjg3OTQgMTUuNjg5MUMxMC44Nzk0IDE0LjIzMjIgMTIuMDYwNCAxMy4wNTEyIDEzLjUxNzMgMTMuMDUxMkMxNC45NzQyIDEzLjA1MTIgMTYuMTU1MiAxNC4yMzIyIDE2LjE1NTIgMTUuNjg5MVoiIHN0cm9rZT0iIzExMTExMSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+
+  --dnt-ap-tag-bg: #{$gray};
+  --dnt-ap-tag-text: #{$black};
+
+  --dnt-ap-pagination-bg: #{$gray};
+  --dnt-ap-pagination-text: #{$black};
+  --dnt-ap-pagination-border: #{$gray-dark};
+
+  --dnt-ap-faq-title: #{$black};
+  --dnt-ap-faq-text: #{$black};
+
+  --dnt-ap-burger-color: #{$black};
+
+  --dnt-ap-article-card-title: #{$black};
+  --dnt-ap-article-card-text: #{$black};
+  --dnt-ap-article-card-more: #{$gray-dark};
+  --dnt-ap-article-card-icon: #{$black};
+  --dnt-ap-article-card-price: #{$gray-dark};
+  --dnt-ap-article-card-price-old: #{$gray};
+
+  --dnt-ap-article-blog-bg: #{$white};
+  --dnt-ap-article-blog-title: #{$black};
+  --dnt-ap-article-blog-date: #{$black};
+  --dnt-ap-article-blog-text: #{$black};
+
+  --dnt-ap-article-review-title: #{$black};
+  --dnt-ap-article-review-date: #{$black};
+  --dnt-ap-article-review-star: #{$gray-accent};
+  --dnt-ap-article-review-star-active: #{$gray-dark};
+  --dnt-ap-article-review-text: #{$black};
+  --dnt-ap-article-review-bg: #{$white};
+}
+
+// Themes
+.theme-black {
+  --dnt-ap-c-background: #{$background-black};
+  --dnt-ap-c-white: #{$black};
+  --dnt-ap-c-black: #{$white};
+}

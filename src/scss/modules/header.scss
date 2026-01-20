@@ -1,0 +1,26 @@
+@use "../core" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  background-color: var(--dnt-ap-header-bg);
+  z-index: 4;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &--center {
+    .header__logo {
+      margin-right: 0;
+    }
+  }
+}

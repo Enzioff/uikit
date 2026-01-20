@@ -1,0 +1,19 @@
+@use "../core" as *;
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 6px;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dnt-ap-tag-text);
+  background-color: var(--dnt-ap-tag-bg);
+  border-radius: 6px;
+
+  &--medium {
+    padding: 1px 8px;
+    font-weight: 500;
+  }
+}

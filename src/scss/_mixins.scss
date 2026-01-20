@@ -1,0 +1,24 @@
+@mixin response($width) {
+  @media only screen and (max-width: $width + "px") {
+    @content
+  }
+}
+
+@mixin response-mob($width) {
+  @media only screen and (min-width: $width + "px") {
+    @content
+  }
+}
+
+@mixin preventUserSelect() {
+  pointer-events: none;
+  user-select: none;
+}
+
+@mixin coverImage() {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

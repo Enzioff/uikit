@@ -1,0 +1,62 @@
+@use "../core" as *;
+
+.article-review {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  min-height: 164px;
+  background-color: var(--dnt-ap-article-review-bg);
+
+  &--rounded {
+    border-radius: 24px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dnt-ap-article-review-title);
+  }
+
+  &__date {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dnt-ap-article-review-date);
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  &__icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    color: var(--dnt-ap-article-review-star);
+
+    &.active {
+      color: var(--dnt-ap-article-review-star-active);
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--dnt-ap-article-review-text);
+  }
+}

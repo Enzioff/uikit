@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dnt-ap</title>
+<script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+<body>
+<div class="demo">
+    <img class="demo__logo" src="./assets/images/logo.svg" alt="">
+    <div class="demo__wrapper">
+        <div class="demo__block demo__block--wide">
+            <h2 class="demo__title">Шапка</h2>
+            <div class="demo__content demo__content--row">
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v1 - стандарт
+                    </p>
+                    <header class="header">
+                        <div class="container">
+                            <div class="header__wrapper">
+                                <a href="#" class="header__logo">
+                                    <img src="assets/images/logo.svg" alt="">
+                                </a>
+                                <nav class="nav">
+                                    <a href="#" class="nav__link">Главная</a>
+                                    <a href="#" class="nav__link">Каталог</a>
+                                    <a href="#" class="nav__link">О нас</a>
+                                    <a href="#" class="nav__link">Блог</a>
+                                    <a href="#" class="nav__link">Контакты</a>
+                                </nav>
+                                <button class="button">
+                                    <span>Заказать звонок</span>
+                                </button>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v2 - навигация по центру
+                    </p>
+                    <header class="header header--center">
+                        <div class="container">
+                            <div class="header__wrapper">
+                                <a href="#" class="header__logo">
+                                    <img src="assets/images/logo.svg" alt="">
+                                </a>
+                                <nav class="nav">
+                                    <a href="#" class="nav__link">Главная</a>
+                                    <a href="#" class="nav__link">Каталог</a>
+                                    <a href="#" class="nav__link">О нас</a>
+                                    <a href="#" class="nav__link">Блог</a>
+                                    <a href="#" class="nav__link">Контакты</a>
+                                </nav>
+                                <button class="button">
+                                    <span>Заказать звонок</span>
+                                </button>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div class="demo__block demo__block--wide">
+            <h2 class="demo__title">Каталог</h2>
+            <div class="demo__content demo__content--row">
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v1 - стандарт
+                    </p>
+                    <div class="catalog">
+                        <div class="catalog__header">
+                            <form class="search">
+                                <input type="search" placeholder="Найти на DNTdigital">
+                                <button class="search__button" type="submit">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 17L13.3793 13.3793M3 9.03448C3 5.70173 5.70173 3 9.03448 3C12.3673 3 15.069 5.70173 15.069 9.03448C15.069 12.3673 12.3673 15.069 9.03448 15.069C5.70173 15.069 3 12.3673 3 9.03448Z"
+                                            stroke="#606060" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </form>
+                            <div class="catalog__filters">
+                                <select class="select">
+                                    <option value="default" selected>Цена</option>
+                                    <option value="1300-3000">Цена: от 1300 до 3000</option>
+                                    <option value="3000-1300">Цена: от 3000 до 1300</option>
+                                </select>
+                                <select class="select select--filter">
+                                    <option value="default" selected>Все фильтры</option>
+                                    <option value="1300-3000">По популярности</option>
+                                    <option value="3000-1300">По релевантности</option>
+                                    <option value="3000-1300">По цене</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalog__body">
+                            <article class="article-card">
+                                <div class="article-card__intro">
+                                    <picture class="article-card__picture">
+                                        <img src="https://placehold.co/600x400" alt="">
+                                    </picture>
+                                    <button class="article-card__favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M9.99413 4.41178C8.29472 2.50872 5.46079 1.99679 3.33149 3.73943C1.2022 5.48207 0.902424 8.39565 2.57457 10.4567L9.99413 17.328L17.4137 10.4567C19.086 8.39565 18.8228 5.46375 16.6568 3.73943C14.4909 2.01513 11.6937 2.50872 9.99413 4.41178Z"
+                                                  stroke="#111111" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <p class="article-card__tag tag tag--medium">Распродажа</p>
+                                </div>
+                                <div class="article-card__info">
+                                    <h3 class="article-card__title">Заголовок</h3>
+                                    <p class="article-card__price">
+                                        <span>32 254₽</span>
+                                        <span>46 254₽</span>
+                                    </p>
+                                    <button class="button button--cart">
+                                        <span>В корзину</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_595_2929)">
+                                                <path
+                                                    d="M6 19C6.55228 19 7 18.5523 7 18C7 17.4477 6.55228 17 6 17C5.44772 17 5 17.4477 5 18C5 18.5523 5.44772 19 6 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M17 19C17.5523 19 18 18.5523 18 18C18 17.4477 17.5523 17 17 17C16.4477 17 16 17.4477 16 18C16 18.5523 16.4477 19 17 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M1 2H3.23933L5.43703 12.7117C5.51202 13.08 5.71741 13.4109 6.01724 13.6464C6.31708 13.8818 6.69226 14.0069 7.07711 13.9997H15.0479C15.4327 14.0069 15.8079 13.8818 16.1077 13.6464C16.4076 13.4109 16.613 13.08 16.6879 12.7117L18 5.9999H4.05937"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_595_2929">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <div class="article-card__intro">
+                                    <picture class="article-card__picture">
+                                        <img src="https://placehold.co/600x400" alt="">
+                                    </picture>
+                                    <button class="article-card__favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M9.99413 4.41178C8.29472 2.50872 5.46079 1.99679 3.33149 3.73943C1.2022 5.48207 0.902424 8.39565 2.57457 10.4567L9.99413 17.328L17.4137 10.4567C19.086 8.39565 18.8228 5.46375 16.6568 3.73943C14.4909 2.01513 11.6937 2.50872 9.99413 4.41178Z"
+                                                  stroke="#111111" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <p class="article-card__tag tag tag--medium">Распродажа</p>
+                                </div>
+                                <div class="article-card__info">
+                                    <h3 class="article-card__title">Заголовок</h3>
+                                    <p class="article-card__price">
+                                        <span>32 254₽</span>
+                                        <span>46 254₽</span>
+                                    </p>
+                                    <button class="button button--cart">
+                                        <span>В корзину</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_595_2929)">
+                                                <path
+                                                    d="M6 19C6.55228 19 7 18.5523 7 18C7 17.4477 6.55228 17 6 17C5.44772 17 5 17.4477 5 18C5 18.5523 5.44772 19 6 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M17 19C17.5523 19 18 18.5523 18 18C18 17.4477 17.5523 17 17 17C16.4477 17 16 17.4477 16 18C16 18.5523 16.4477 19 17 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M1 2H3.23933L5.43703 12.7117C5.51202 13.08 5.71741 13.4109 6.01724 13.6464C6.31708 13.8818 6.69226 14.0069 7.07711 13.9997H15.0479C15.4327 14.0069 15.8079 13.8818 16.1077 13.6464C16.4076 13.4109 16.613 13.08 16.6879 12.7117L18 5.9999H4.05937"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_595_2929">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <div class="article-card__intro">
+                                    <picture class="article-card__picture">
+                                        <img src="https://placehold.co/600x400" alt="">
+                                    </picture>
+                                    <button class="article-card__favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M9.99413 4.41178C8.29472 2.50872 5.46079 1.99679 3.33149 3.73943C1.2022 5.48207 0.902424 8.39565 2.57457 10.4567L9.99413 17.328L17.4137 10.4567C19.086 8.39565 18.8228 5.46375 16.6568 3.73943C14.4909 2.01513 11.6937 2.50872 9.99413 4.41178Z"
+                                                  stroke="#111111" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <p class="article-card__tag tag tag--medium">Распродажа</p>
+                                </div>
+                                <div class="article-card__info">
+                                    <h3 class="article-card__title">Заголовок</h3>
+                                    <p class="article-card__price">
+                                        <span>32 254₽</span>
+                                        <span>46 254₽</span>
+                                    </p>
+                                    <button class="button button--cart">
+                                        <span>В корзину</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_595_2929)">
+                                                <path
+                                                    d="M6 19C6.55228 19 7 18.5523 7 18C7 17.4477 6.55228 17 6 17C5.44772 17 5 17.4477 5 18C5 18.5523 5.44772 19 6 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M17 19C17.5523 19 18 18.5523 18 18C18 17.4477 17.5523 17 17 17C16.4477 17 16 17.4477 16 18C16 18.5523 16.4477 19 17 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M1 2H3.23933L5.43703 12.7117C5.51202 13.08 5.71741 13.4109 6.01724 13.6464C6.31708 13.8818 6.69226 14.0069 7.07711 13.9997H15.0479C15.4327 14.0069 15.8079 13.8818 16.1077 13.6464C16.4076 13.4109 16.613 13.08 16.6879 12.7117L18 5.9999H4.05937"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_595_2929">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <div class="article-card__intro">
+                                    <picture class="article-card__picture">
+                                        <img src="https://placehold.co/600x400" alt="">
+                                    </picture>
+                                    <button class="article-card__favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M9.99413 4.41178C8.29472 2.50872 5.46079 1.99679 3.33149 3.73943C1.2022 5.48207 0.902424 8.39565 2.57457 10.4567L9.99413 17.328L17.4137 10.4567C19.086 8.39565 18.8228 5.46375 16.6568 3.73943C14.4909 2.01513 11.6937 2.50872 9.99413 4.41178Z"
+                                                  stroke="#111111" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <p class="article-card__tag tag tag--medium">Распродажа</p>
+                                </div>
+                                <div class="article-card__info">
+                                    <h3 class="article-card__title">Заголовок</h3>
+                                    <p class="article-card__price">
+                                        <span>32 254₽</span>
+                                        <span>46 254₽</span>
+                                    </p>
+                                    <button class="button button--cart">
+                                        <span>В корзину</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_595_2929)">
+                                                <path
+                                                    d="M6 19C6.55228 19 7 18.5523 7 18C7 17.4477 6.55228 17 6 17C5.44772 17 5 17.4477 5 18C5 18.5523 5.44772 19 6 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M17 19C17.5523 19 18 18.5523 18 18C18 17.4477 17.5523 17 17 17C16.4477 17 16 17.4477 16 18C16 18.5523 16.4477 19 17 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M1 2H3.23933L5.43703 12.7117C5.51202 13.08 5.71741 13.4109 6.01724 13.6464C6.31708 13.8818 6.69226 14.0069 7.07711 13.9997H15.0479C15.4327 14.0069 15.8079 13.8818 16.1077 13.6464C16.4076 13.4109 16.613 13.08 16.6879 12.7117L18 5.9999H4.05937"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_595_2929">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <div class="article-card__intro">
+                                    <picture class="article-card__picture">
+                                        <img src="https://placehold.co/600x400" alt="">
+                                    </picture>
+                                    <button class="article-card__favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M9.99413 4.41178C8.29472 2.50872 5.46079 1.99679 3.33149 3.73943C1.2022 5.48207 0.902424 8.39565 2.57457 10.4567L9.99413 17.328L17.4137 10.4567C19.086 8.39565 18.8228 5.46375 16.6568 3.73943C14.4909 2.01513 11.6937 2.50872 9.99413 4.41178Z"
+                                                  stroke="#111111" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <p class="article-card__tag tag tag--medium">Распродажа</p>
+                                </div>
+                                <div class="article-card__info">
+                                    <h3 class="article-card__title">Заголовок</h3>
+                                    <p class="article-card__price">
+                                        <span>32 254₽</span>
+                                        <span>46 254₽</span>
+                                    </p>
+                                    <button class="button button--cart">
+                                        <span>В корзину</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_595_2929)">
+                                                <path
+                                                    d="M6 19C6.55228 19 7 18.5523 7 18C7 17.4477 6.55228 17 6 17C5.44772 17 5 17.4477 5 18C5 18.5523 5.44772 19 6 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M17 19C17.5523 19 18 18.5523 18 18C18 17.4477 17.5523 17 17 17C16.4477 17 16 17.4477 16 18C16 18.5523 16.4477 19 17 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M1 2H3.23933L5.43703 12.7117C5.51202 13.08 5.71741 13.4109 6.01724 13.6464C6.31708 13.8818 6.69226 14.0069 7.07711 13.9997H15.0479C15.4327 14.0069 15.8079 13.8818 16.1077 13.6464C16.4076 13.4109 16.613 13.08 16.6879 12.7117L18 5.9999H4.05937"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_595_2929">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <div class="article-card__intro">
+                                    <picture class="article-card__picture">
+                                        <img src="https://placehold.co/600x400" alt="">
+                                    </picture>
+                                    <button class="article-card__favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M9.99413 4.41178C8.29472 2.50872 5.46079 1.99679 3.33149 3.73943C1.2022 5.48207 0.902424 8.39565 2.57457 10.4567L9.99413 17.328L17.4137 10.4567C19.086 8.39565 18.8228 5.46375 16.6568 3.73943C14.4909 2.01513 11.6937 2.50872 9.99413 4.41178Z"
+                                                  stroke="#111111" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <p class="article-card__tag tag tag--medium">Распродажа</p>
+                                </div>
+                                <div class="article-card__info">
+                                    <h3 class="article-card__title">Заголовок</h3>
+                                    <p class="article-card__price">
+                                        <span>32 254₽</span>
+                                        <span>46 254₽</span>
+                                    </p>
+                                    <button class="button button--cart">
+                                        <span>В корзину</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_595_2929)">
+                                                <path
+                                                    d="M6 19C6.55228 19 7 18.5523 7 18C7 17.4477 6.55228 17 6 17C5.44772 17 5 17.4477 5 18C5 18.5523 5.44772 19 6 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M17 19C17.5523 19 18 18.5523 18 18C18 17.4477 17.5523 17 17 17C16.4477 17 16 17.4477 16 18C16 18.5523 16.4477 19 17 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M1 2H3.23933L5.43703 12.7117C5.51202 13.08 5.71741 13.4109 6.01724 13.6464C6.31708 13.8818 6.69226 14.0069 7.07711 13.9997H15.0479C15.4327 14.0069 15.8079 13.8818 16.1077 13.6464C16.4076 13.4109 16.613 13.08 16.6879 12.7117L18 5.9999H4.05937"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_595_2929">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <div class="article-card__intro">
+                                    <picture class="article-card__picture">
+                                        <img src="https://placehold.co/600x400" alt="">
+                                    </picture>
+                                    <button class="article-card__favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M9.99413 4.41178C8.29472 2.50872 5.46079 1.99679 3.33149 3.73943C1.2022 5.48207 0.902424 8.39565 2.57457 10.4567L9.99413 17.328L17.4137 10.4567C19.086 8.39565 18.8228 5.46375 16.6568 3.73943C14.4909 2.01513 11.6937 2.50872 9.99413 4.41178Z"
+                                                  stroke="#111111" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <p class="article-card__tag tag tag--medium">Распродажа</p>
+                                </div>
+                                <div class="article-card__info">
+                                    <h3 class="article-card__title">Заголовок</h3>
+                                    <p class="article-card__price">
+                                        <span>32 254₽</span>
+                                        <span>46 254₽</span>
+                                    </p>
+                                    <button class="button button--cart">
+                                        <span>В корзину</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_595_2929)">
+                                                <path
+                                                    d="M6 19C6.55228 19 7 18.5523 7 18C7 17.4477 6.55228 17 6 17C5.44772 17 5 17.4477 5 18C5 18.5523 5.44772 19 6 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M17 19C17.5523 19 18 18.5523 18 18C18 17.4477 17.5523 17 17 17C16.4477 17 16 17.4477 16 18C16 18.5523 16.4477 19 17 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M1 2H3.23933L5.43703 12.7117C5.51202 13.08 5.71741 13.4109 6.01724 13.6464C6.31708 13.8818 6.69226 14.0069 7.07711 13.9997H15.0479C15.4327 14.0069 15.8079 13.8818 16.1077 13.6464C16.4076 13.4109 16.613 13.08 16.6879 12.7117L18 5.9999H4.05937"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_595_2929">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <div class="article-card__intro">
+                                    <picture class="article-card__picture">
+                                        <img src="https://placehold.co/600x400" alt="">
+                                    </picture>
+                                    <button class="article-card__favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M9.99413 4.41178C8.29472 2.50872 5.46079 1.99679 3.33149 3.73943C1.2022 5.48207 0.902424 8.39565 2.57457 10.4567L9.99413 17.328L17.4137 10.4567C19.086 8.39565 18.8228 5.46375 16.6568 3.73943C14.4909 2.01513 11.6937 2.50872 9.99413 4.41178Z"
+                                                  stroke="#111111" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <p class="article-card__tag tag tag--medium">Распродажа</p>
+                                </div>
+                                <div class="article-card__info">
+                                    <h3 class="article-card__title">Заголовок</h3>
+                                    <p class="article-card__price">
+                                        <span>32 254₽</span>
+                                        <span>46 254₽</span>
+                                    </p>
+                                    <button class="button button--cart">
+                                        <span>В корзину</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_595_2929)">
+                                                <path
+                                                    d="M6 19C6.55228 19 7 18.5523 7 18C7 17.4477 6.55228 17 6 17C5.44772 17 5 17.4477 5 18C5 18.5523 5.44772 19 6 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M17 19C17.5523 19 18 18.5523 18 18C18 17.4477 17.5523 17 17 17C16.4477 17 16 17.4477 16 18C16 18.5523 16.4477 19 17 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M1 2H3.23933L5.43703 12.7117C5.51202 13.08 5.71741 13.4109 6.01724 13.6464C6.31708 13.8818 6.69226 14.0069 7.07711 13.9997H15.0479C15.4327 14.0069 15.8079 13.8818 16.1077 13.6464C16.4076 13.4109 16.613 13.08 16.6879 12.7117L18 5.9999H4.05937"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_595_2929">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <div class="article-card__intro">
+                                    <picture class="article-card__picture">
+                                        <img src="https://placehold.co/600x400" alt="">
+                                    </picture>
+                                    <button class="article-card__favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M9.99413 4.41178C8.29472 2.50872 5.46079 1.99679 3.33149 3.73943C1.2022 5.48207 0.902424 8.39565 2.57457 10.4567L9.99413 17.328L17.4137 10.4567C19.086 8.39565 18.8228 5.46375 16.6568 3.73943C14.4909 2.01513 11.6937 2.50872 9.99413 4.41178Z"
+                                                  stroke="#111111" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <p class="article-card__tag tag tag--medium">Распродажа</p>
+                                </div>
+                                <div class="article-card__info">
+                                    <h3 class="article-card__title">Заголовок</h3>
+                                    <p class="article-card__price">
+                                        <span>32 254₽</span>
+                                        <span>46 254₽</span>
+                                    </p>
+                                    <button class="button button--cart">
+                                        <span>В корзину</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_595_2929)">
+                                                <path
+                                                    d="M6 19C6.55228 19 7 18.5523 7 18C7 17.4477 6.55228 17 6 17C5.44772 17 5 17.4477 5 18C5 18.5523 5.44772 19 6 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M17 19C17.5523 19 18 18.5523 18 18C18 17.4477 17.5523 17 17 17C16.4477 17 16 17.4477 16 18C16 18.5523 16.4477 19 17 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M1 2H3.23933L5.43703 12.7117C5.51202 13.08 5.71741 13.4109 6.01724 13.6464C6.31708 13.8818 6.69226 14.0069 7.07711 13.9997H15.0479C15.4327 14.0069 15.8079 13.8818 16.1077 13.6464C16.4076 13.4109 16.613 13.08 16.6879 12.7117L18 5.9999H4.05937"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_595_2929">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <div class="article-card__intro">
+                                    <picture class="article-card__picture">
+                                        <img src="https://placehold.co/600x400" alt="">
+                                    </picture>
+                                    <button class="article-card__favorite">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M9.99413 4.41178C8.29472 2.50872 5.46079 1.99679 3.33149 3.73943C1.2022 5.48207 0.902424 8.39565 2.57457 10.4567L9.99413 17.328L17.4137 10.4567C19.086 8.39565 18.8228 5.46375 16.6568 3.73943C14.4909 2.01513 11.6937 2.50872 9.99413 4.41178Z"
+                                                  stroke="#111111" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <p class="article-card__tag tag tag--medium">Распродажа</p>
+                                </div>
+                                <div class="article-card__info">
+                                    <h3 class="article-card__title">Заголовок</h3>
+                                    <p class="article-card__price">
+                                        <span>32 254₽</span>
+                                        <span>46 254₽</span>
+                                    </p>
+                                    <button class="button button--cart">
+                                        <span>В корзину</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_595_2929)">
+                                                <path
+                                                    d="M6 19C6.55228 19 7 18.5523 7 18C7 17.4477 6.55228 17 6 17C5.44772 17 5 17.4477 5 18C5 18.5523 5.44772 19 6 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M17 19C17.5523 19 18 18.5523 18 18C18 17.4477 17.5523 17 17 17C16.4477 17 16 17.4477 16 18C16 18.5523 16.4477 19 17 19Z"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                                <path
+                                                    d="M1 2H3.23933L5.43703 12.7117C5.51202 13.08 5.71741 13.4109 6.01724 13.6464C6.31708 13.8818 6.69226 14.0069 7.07711 13.9997H15.0479C15.4327 14.0069 15.8079 13.8818 16.1077 13.6464C16.4076 13.4109 16.613 13.08 16.6879 12.7117L18 5.9999H4.05937"
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_595_2929">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="demo__block demo__block--wide">
+            <h2 class="demo__title">Футер</h2>
+            <div class="demo__content demo__content--row">
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v1 - стандарт
+                    </p>
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="footer__wrapper">
+                                <div class="footer__body">
+                                    <div class="footer__info">
+                                        <a href="#" class="footer__logo">
+                                            <img src="./assets/images/logo.svg" alt="">
+                                        </a>
+                                        <div class="footer__detail">
+                                            <p class="footer__text">
+                                                ПН-ВС 10:00-18:00<br>
+                                                ул. Театральная, 5, Советск, Калининградская область
+                                            </p>
+                                            <div class="social">
+                                                <a href="#" class="social__link">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M17.3398 24.5098C7.08991 24.5098 1.24361 17.753 1 6.50977H6.1343C6.30295 14.762 10.088 18.2575 13.0861 18.9782V6.50977H17.9207V13.6268C20.8814 13.3205 23.9915 10.0773 25.0409 6.50977H29.8755C29.0698 10.9062 25.6969 14.1494 23.2984 15.4827C25.6969 16.5638 29.5384 19.3926 31 24.5098H25.6782C24.5351 21.0863 21.6871 18.4377 17.9207 18.0773V24.5098H17.3398Z"
+                                                            fill="#606060"/>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="social__link">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                              d="M2.85611 15.4709C10.1039 12.3661 14.9368 10.3193 17.355 9.33042C24.2594 6.50685 25.6941 6.01637 26.6292 6.00017C26.8349 5.99661 27.2947 6.04673 27.5926 6.28437C27.8441 6.48504 27.9133 6.75611 27.9464 6.94636C27.9795 7.13661 28.0208 7.57001 27.988 7.90866C27.6138 11.7739 25.9949 21.1538 25.1713 25.483C24.8228 27.3148 24.1365 27.929 23.4722 27.9891C22.0284 28.1197 20.9321 27.051 19.5337 26.1497C17.3455 24.7394 16.1094 23.8615 13.9854 22.4853C11.5307 20.8949 13.122 20.0208 14.5209 18.5922C14.887 18.2184 21.2483 12.5294 21.3714 12.0134C21.3868 11.9488 21.4011 11.7082 21.2557 11.5812C21.1103 11.4541 20.8958 11.4976 20.7409 11.5321C20.5215 11.5811 17.0259 13.8528 10.2541 18.3472C9.26184 19.0171 8.36312 19.3435 7.55789 19.3264C6.6702 19.3075 4.96262 18.8329 3.69322 18.4272C2.13624 17.9296 0.898786 17.6665 1.00654 16.8214C1.06267 16.3812 1.67919 15.931 2.85611 15.4709Z"
+                                                              fill="#606060"/>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="social__link">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M28.8047 10.2383V21.5856C28.8047 22.503 28.4421 23.3857 27.7911 24.0532C27.14 24.7207 26.2497 25.1224 25.3023 25.1762L25.084 25.1822H7.7207C6.77166 25.1823 5.85847 24.8318 5.16798 24.2024C4.47748 23.573 4.06188 22.7124 4.0062 21.7966L4 21.5856V10.2383L15.714 17.7876L15.8579 17.8667C16.0274 17.9468 16.2136 17.9884 16.4023 17.9884C16.591 17.9884 16.7773 17.9468 16.9468 17.8667L17.0907 17.7876L28.8047 10.2383Z"
+                                                            fill="#606060"/>
+                                                        <path
+                                                            d="M25.0848 6C26.4243 6 27.5988 6.68336 28.2536 7.71079L16.4032 15.3476L4.55273 7.71079C4.86378 7.22264 5.29103 6.81343 5.79889 6.5173C6.30674 6.22117 6.88047 6.04668 7.47225 6.00839L7.72153 6H25.0848Z"
+                                                            fill="#606060"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <a href="tel:+74016135851" class="footer__text">+7 (4016) 13 - 58 - 51</a>
+                                        </div>
+                                    </div>
+                                    <div class="footer__feedback">
+                                        <h2 class="footer__title">Свяжитесь с нами</h2>
+                                        <form action="#" class="form">
+                                            <fieldset class="form__wrapper">
+                                                <label class="form__item">
+                                                    <input class="input" type="text" placeholder="Имя">
+                                                </label>
+                                                <label class="form__item">
+                                                    <input class="input" type="tel" placeholder="Телефон">
+                                                </label>
+                                            </fieldset>
+                                            <label class="form__agreement">
+                                                <input type="checkbox" class="checkbox">
+                                                <span>
+                                Я принимаю <a href="#" target="_blank">пользовательское соглашение</a>, а также ознакомлен и согласен с <a
+                                                    href="#" target="_blank">политикой конфиденциальности</a>.
+                            </span>
+                                            </label>
+                                            <button class="button button--transparent" type="submit">Отправить</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="footer__bottom">
+                                    <div class="footer__meta">
+                                        <p class="footer__text">
+                                            © 2019 «ТЦ» все права защищены
+                                        </p>
+                                        <p class="footer__text footer__text--offset">
+                                            <a href="#">Политика конфиденциальности</a>
+                                            <a href="#">Условия использования</a>
+                                        </p>
+                                    </div>
+                                    <div class="developer">
+                                        <p class="developer__text">Разработано</p>
+                                        <svg class="developer__logo" width="96" height="57" viewBox="0 0 96 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.68945 5.92754L11.3258 56.8534L80.2751 51.5321L75.1376 0L6.68945 5.92754Z" fill="#606060"/>
+                                            <path d="M14.4082 12.6582V28.814H23.4072C28.9326 28.7683 31.6897 24.756 31.6897 20.7386C31.6897 16.7213 28.9326 12.7039 23.4072 12.6582H14.4082ZM17.2388 15.0832H23.2939C26.9105 15.0832 28.7223 17.9003 28.7223 20.7386C28.7223 23.5546 26.9105 26.3717 23.2939 26.3717H17.2388V15.0832ZM34.7765 28.814H37.6081V16.3079L48.9763 28.814H51.8303V12.6582H48.9763V25.1703L37.6081 12.6582H34.7765V28.814ZM54.2455 12.6582V15.0386H61.8777V28.814H64.7317V15.0386H72.364V12.6582H54.2455Z" fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.4805 35.3025L34.2015 49.1917L94.555 49.3674L92.8177 31.3867L32.4805 35.3025Z" fill="#606060" stroke="white"/>
+                                            <path d="M47.0745 45.6953V37.683H45.8496V40.7488C45.4964 40.1649 44.7441 39.8186 43.8499 39.8186C42.0728 39.8186 40.8652 41.026 40.8652 42.7879C40.8652 44.5732 42.1075 45.8487 43.8499 45.8487C44.7676 45.8487 45.5301 45.4801 45.8496 44.885V45.6953H47.0745ZM45.8384 42.7879C45.8384 43.9446 45.0687 44.7489 43.953 44.7489C42.8588 44.7489 42.0963 43.9558 42.0963 42.7879C42.0963 41.6546 42.8251 40.9235 43.953 40.9235C45.0922 40.9235 45.8384 41.6546 45.8384 42.7879ZM49.5805 38.1247C49.5805 38.5949 49.9623 38.9635 50.4236 38.9635C50.8963 38.9635 51.2719 38.5837 51.2719 38.1247C51.2719 37.6657 50.9075 37.292 50.4236 37.292C49.9388 37.292 49.5805 37.6657 49.5805 38.1247ZM48.2249 45.6953H52.9184V44.7032H51.2035V39.9719H48.2249V40.958H50.0072V44.7032H48.2249V45.6953ZM60.4598 39.8927H58.8021V40.8392C58.404 40.1984 57.6404 39.8074 56.7687 39.8074C55.4193 39.8074 54.4158 40.7711 54.4158 41.9268C54.4158 42.4995 54.6608 42.9697 54.9344 43.1911C54.473 43.3383 54.1994 43.6724 54.1994 44.0685C54.1994 44.4595 54.4158 44.8738 54.7415 45.0667C54.3138 45.2302 53.9208 45.5481 53.9208 46.1879C53.9208 47.1292 54.7292 47.9792 56.7575 47.9792C58.4264 47.9792 59.981 47.4633 59.981 46.0863C59.981 44.9642 58.9327 44.4371 56.7687 44.494C55.6009 44.5275 55.0824 44.3579 55.0824 44.0126C55.0824 43.8654 55.2365 43.7171 55.4417 43.6724C55.7439 43.8654 56.2277 44.0005 56.7687 44.0005C58.0671 44.0005 59.1267 43.2469 59.1267 41.9613C59.1267 41.5642 59.0246 41.1956 58.8368 40.8839H60.4598V39.8927ZM56.7687 43.0032C56.0399 43.0032 55.5673 42.596 55.5673 41.9268C55.5673 41.2637 56.0399 40.8046 56.7687 40.8046C57.4924 40.8046 57.9763 41.2637 57.9763 41.9268C57.9763 42.596 57.4924 43.0032 56.7687 43.0032ZM55.4642 45.344C55.7551 45.4577 56.0736 45.4912 56.7687 45.4801C57.9875 45.4577 58.7561 45.5481 58.7561 46.1198C58.7561 46.6591 58.0446 47.0267 56.7575 47.0267C55.555 47.0267 54.9007 46.7037 54.9007 46.0975C54.9007 45.7289 55.1222 45.4689 55.4642 45.344ZM62.8239 38.1247C62.8239 38.5949 63.1995 38.9635 63.6609 38.9635C64.1335 38.9635 64.5153 38.5837 64.5153 38.1247C64.5153 37.6657 64.1447 37.292 63.6609 37.292C63.177 37.292 62.8239 37.6657 62.8239 38.1247ZM61.4622 45.6953H66.1617V44.7032H64.4469V39.9719H61.4622V40.958H63.2505V44.7032H61.4622V45.6953ZM71.6973 43.6156C71.6973 44.3356 71.3043 44.7712 70.7746 44.7712C70.2111 44.7712 69.9375 44.2787 69.9375 43.4856V40.9692H72.0107V39.9719H69.9375V38.0455H68.6963V39.2123C68.6963 39.717 68.6391 39.9719 68.1665 39.9719H67.107V40.9692H68.6963V43.4856C68.6963 44.9418 69.3741 45.8365 70.7072 45.8365C71.8862 45.8365 72.7569 45.1571 72.7569 44.0573L71.6973 43.6156ZM76.2142 45.8487C77.2227 45.8487 78.1679 45.4344 78.317 44.7946C78.368 45.2018 78.5956 45.5136 78.9315 45.673C79.2275 45.8253 79.598 45.8487 79.9512 45.7065V44.6808C79.8032 44.7154 79.644 44.7265 79.5184 44.6189C79.3877 44.5163 79.2959 44.2899 79.2959 43.8654V41.8364C79.2959 40.5894 78.3507 39.8074 76.7042 39.8074C75.2802 39.8074 74.1982 40.3974 74.0614 41.2748L75.1669 41.5988C75.2577 41.1509 75.7988 40.8392 76.6358 40.8392C77.4452 40.8392 78.0771 41.1052 78.0771 41.5419C78.0771 41.9501 77.5024 42.1482 76.0723 42.2497C74.7167 42.3523 73.8848 43.0032 73.8848 44.0573C73.8848 45.1003 74.7055 45.8487 76.2142 45.8487ZM76.2142 44.8281C75.5313 44.8281 75.121 44.5397 75.121 44.0685C75.121 43.6267 75.5089 43.315 76.1407 43.2703C77.2115 43.2023 77.8719 43.0774 78.0883 42.8225C78.0883 44.035 77.3085 44.8281 76.2142 44.8281ZM80.1615 38.6294H81.5181V43.5303C81.5181 44.953 82.3377 45.8365 83.6596 45.8365C84.8958 45.8365 85.6869 45.0891 85.6981 43.8877L84.6508 43.4511C84.6385 44.2675 84.2578 44.7712 83.6596 44.7712C83.0951 44.7712 82.7532 44.301 82.7532 43.5303V37.5641H80.1615V38.6294Z" fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1493 45.6289L23.3432 48.6663L5.8739 49.7031L5.67383 46.9206L23.1493 45.6289Z" fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.554688 39.2865L1.18143 44.6921L28.9492 41.2749L28.3225 36.5781L0.554688 39.2865Z" fill="#606060" stroke="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="temp">
+    <a href="./index.html">Виджеты</a>
+    <a href="./entities.html">Сущности</a>
+    <a href="./ui.html">UI</a>
+</div>
+</body>
+</html>

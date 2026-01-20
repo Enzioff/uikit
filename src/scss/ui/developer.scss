@@ -1,0 +1,18 @@
+.developer {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+
+  &__text {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--dnt-ap-c-gray-dark);
+  }
+
+  &__logo {
+    display: flex;
+    flex-shrink: 0;
+    width: 96px;
+    height: 57px;
+  }
+}

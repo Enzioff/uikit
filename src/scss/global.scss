@@ -1,0 +1,86 @@
+@use "core" as *;
+
+*:where(:not(html,iframe,canvas,img,svg,video,audio):not(svg *,symbol *):not(.adm-workarea *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 385px;
+  min-height: 100vh;
+
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--dnt-ap-c-black);
+  background-color: var(--dnt-ap-c-background);
+
+  overflow-x: hidden;
+
+  &.fixed {
+    overflow: hidden;
+  }
+}
+
+main {
+  flex-grow: 1;
+  overflow-x: clip;
+}
+
+svg {
+  display: flex;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--dnt-ap-container-width);
+  padding: var(--dnt-ap-container-padding);
+  margin: 0 auto;
+  z-index: 1;
+
+  &--fluid {
+    max-width: 100%;
+  }
+
+  @include response($size-mobile) {
+    padding: 0 12px;
+  }
+}
+
+.mob-hidden {
+  @include response($size-mobile) {
+    display: none;
+  }
+}
+
+.desktop-hidden {
+  @include response-mob($size-mobile + 1) {
+    display: none;
+  }
+}
+
+.temp {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 1240px;
+  margin: auto auto 0;
+  padding: 20px;
+}

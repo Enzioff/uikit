@@ -1,0 +1,100 @@
+@use "sass:math";
+@use "core" as *;
+
+@mixin pt($size) {
+  padding-top: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 300 {
+  .pt-#{$i} {
+    @include pt($i);
+  }
+}
+
+@mixin ptm($size) {
+  @include response($size) {
+    padding-top: math.div($size, 16) * 1rem;
+  }
+}
+
+@for $i from 0 through 300 {
+  .ptm-#{$i} {
+    @include ptm($i);
+  }
+}
+
+@mixin pb($size) {
+  padding-bottom: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 300 {
+  .pb-#{$i} {
+    @include pb($i);
+  }
+}
+
+@mixin pbm($size) {
+  @include response($size) {
+    padding-bottom: math.div($size, 16) * 1rem;
+  }
+}
+
+@for $i from 0 through 300 {
+  .pbm-#{$i} {
+    @include pbm($i);
+  }
+}
+
+@mixin mt($size) {
+  margin-top: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 300 {
+  .mt-#{$i} {
+    @include mt($i);
+  }
+}
+
+@mixin mtm($size) {
+  @include response($size) {
+    margin-top: math.div($size, 16) * 1rem;
+  }
+}
+
+@for $i from 0 through 300 {
+  .mtm-#{$i} {
+    @include mtm($i);
+  }
+}
+
+@mixin mb($size) {
+  margin-bottom: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 300 {
+  .mb-#{$i} {
+    @include mb($i);
+  }
+}
+
+@mixin mbm($size) {
+  @include response($size) {
+    margin-bottom: math.div($size, 16) * 1rem;
+  }
+}
+
+@for $i from 0 through 300 {
+  .mbm-#{$i} {
+    @include mbm($i);
+  }
+}
+
+@for $i from 0 through 100 {
+  .gap-r-#{$i} {
+    row-gap: #{$i}px !important;
+  }
+
+  .gap-c-#{$i} {
+    column-gap: #{$i}px !important;
+  }
+}

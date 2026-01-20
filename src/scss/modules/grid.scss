@@ -1,0 +1,49 @@
+@use "../core" as *;
+
+.grid {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--dnt-ap-grid-gap);
+  width: 100%;
+
+  &--center {
+    align-items: center;
+  }
+
+  @include response($size-mobile) {
+    gap: var(--dnt-ap-grid-gap-mob);
+  }
+
+  @include response-mob($size-mobile + 1) {
+    @for $i from 1 through 12 {
+      .grid__item--#{$i} {
+        grid-column: span $i;
+      }
+    }
+  }
+
+  @include response($size-mobile) {
+    grid-template-columns: repeat(4, 1fr);
+
+    @for $i from 1 through 4 {
+      .grid__item-mob--#{$i} {
+        grid-column: span $i;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &--bottom {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      @include response($size-mobile) {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@use "../core" as *;
+
+.burger {
+  position: relative;
+  display: flex;
+  width: 18px;
+  height: 14px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 18px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: var(--dnt-ap-burger-color);
+    transition: .2s ease;
+  }
+
+  &::after {
+    top: 12px;
+  }
+
+  &__item {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    display: flex;
+    width: 18px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: var(--dnt-ap-burger-color);
+    transition: .2s ease;
+  }
+
+  &--ladder {
+    .burger__item {
+      width: 12px;
+    }
+
+    &::after {
+      width: 14px;
+    }
+
+    &.active {
+      .burger__item {
+        width: 18px;
+      }
+
+      &::after {
+        width: 18px;
+      }
+    }
+  }
+
+  &.active {
+    &::before {
+      top: 6px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 6px;
+      transform: rotate(-45deg);
+    }
+
+    .burger__item {
+      top: -4px;
+    }
+  }
+}

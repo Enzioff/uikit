@@ -1,0 +1,48 @@
+@use "../core" as *;
+
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--dnt-ap-checkbox-border);
+  background-color: var(--dnt-ap-checkbox-bg);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: .2s ease;
+
+  &:hover {
+    border-color: var(--dnt-ap-checkbox-border-active);
+  }
+
+  &:focus {
+
+  }
+
+  &:checked {
+    background-color: var(--dnt-ap-checkbox-bg-active);
+    border-color: var(--dnt-ap-checkbox-border-active);
+
+    &::before {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &::before {
+    content: '';
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background-image: var(--dnt-ap-checkbox-icon);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease;
+  }
+}

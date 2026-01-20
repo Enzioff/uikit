@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dnt-ap</title>
+<script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+<body>
+<div class="demo">
+    <img class="demo__logo" src="./assets/images/logo.svg" alt="">
+    <div class="demo__wrapper">
+        <div class="demo__block">
+            <h2 class="demo__title">Кнопки</h2>
+            <div class="demo__content">
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v1 - стандарт
+                    </p>
+                    <button class="button">Кнопка</button>
+                </div>
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v2 - заполнение
+                    </p>
+                    <button class="button button--wide">Кнопка</button>
+                </div>
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v3 - обводка
+                    </p>
+                    <button class="button button--border">Кнопка</button>
+                </div>
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v4 - прозрачная
+                    </p>
+                    <button class="button button--transparent">Кнопка</button>
+                </div>
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v5 - тень
+                    </p>
+                    <button class="button button--shadow">Кнопка</button>
+                </div>
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v6 - иконка
+                    </p>
+                    <button class="button">
+                        <span>Кнопка</span>
+                        <svg viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.11959e-07 7.34717L18 7.34717" stroke="currentColor"/>
+                            <path d="M11.25 14.3472L18 7.34717L11.25 0.347169" stroke="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="demo__block">
+            <h2 class="demo__title">Чекбокс</h2>
+            <div class="demo__content">
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v1 - стандарт
+                    </p>
+                    <input type="checkbox" class="checkbox">
+                </div>
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v2 - активный
+                    </p>
+                    <input type="checkbox" class="checkbox" checked>
+                </div>
+            </div>
+        </div>
+        <div class="demo__block">
+            <h2 class="demo__title">Бургер меню</h2>
+            <div class="demo__content">
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v1 - стандарт
+                    </p>
+                    <div class="burger">
+                        <div class="burger__item"></div>
+                    </div>
+                </div>
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v2 - лесенка
+                    </p>
+                    <div class="burger burger--ladder">
+                        <div class="burger__item"></div>
+                    </div>
+                </div>
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v3 - активный
+                    </p>
+                    <div class="burger active">
+                        <div class="burger__item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="demo__block">
+            <h2 class="demo__title">Инпут</h2>
+            <div class="demo__content">
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v1 - текст
+                    </p>
+                    <input type="text" class="input" placeholder="Текст">
+                </div>
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v2 - число
+                    </p>
+                    <input type="number" class="input" placeholder="Чисто">
+                </div>
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v3 - комментарий
+                    </p>
+                    <textarea class="input input--area" placeholder="Комментарий"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="demo__block">
+            <h2 class="demo__title">Сортировка</h2>
+            <div class="demo__content">
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v1 - стандарт
+                    </p>
+                    <select class="select">
+                        <option value="default" selected>Цена</option>
+                        <option value="1300-3000">Цена: от 1300 до 3000</option>
+                        <option value="3000-1300">Цена: от 3000 до 1300</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="demo__block">
+            <h2 class="demo__title">Фильтрация</h2>
+            <div class="demo__content">
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v1 - стандарт
+                    </p>
+                    <select class="select select--filter">
+                        <option value="default" selected>Все фильтры</option>
+                        <option value="1300-3000">По популярности</option>
+                        <option value="3000-1300">По релевантности</option>
+                        <option value="3000-1300">По цене</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="demo__block">
+            <h2 class="demo__title">Тег</h2>
+            <div class="demo__content">
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v1 - стандарт
+                    </p>
+                    <p class="tag">-20%</p>
+                </div>
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v2 - средний
+                    </p>
+                    <p class="tag tag--medium">Распродажа</p>
+                </div>
+            </div>
+        </div>
+        <div class="demo__block">
+            <h2 class="demo__title">Пагинация</h2>
+            <div class="demo__content">
+                <div class="demo__item">
+                    <p class="demo__text">
+                        v1 - стандарт
+                    </p>
+                    <div class="pagination">
+                        <button class="pagination__button pagination__button--prev">
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 14.3535L11 7.35352L4 0.353516" stroke="#606060"/>
+                            </svg>
+                        </button>
+                        <ul class="pagination__list">
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">1</a>
+                            </li>
+                            <li class="pagination__item active">
+                                <a href="#" class="pagination__link">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">4</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">5</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">6</a>
+                            </li>
+                            <li class="pagination__item pagination__item--next">
+                                <a href="#" class="pagination__link">далее</a>
+                            </li>
+                        </ul>
+                        <button class="pagination__button">
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 14.3535L11 7.35352L4 0.353516" stroke="#606060"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="temp">
+    <a href="./index.html">Виджеты</a>
+    <a href="./entities.html">Сущности</a>
+    <a href="./ui.html">UI</a>
+</div>
+</body>
+</html>

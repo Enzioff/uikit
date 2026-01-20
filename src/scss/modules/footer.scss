@@ -1,0 +1,74 @@
+@use "../core" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 590px;
+    gap: 20px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--dnt-ap-c-gray);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+
+    .footer__text:first-child {
+      grid-row: span 2;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 400;
+    color: $gray-dark;
+
+    &--offset {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 33px;
+  }
+
+  &__feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: $gray-dark;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+}

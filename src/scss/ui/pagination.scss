@@ -1,0 +1,65 @@
+@use "../core" as *;
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    &.active {
+      .pagination__link {
+        border-color: var(--dnt-ap-pagination-border);
+        background-color: transparent;
+      }
+    }
+
+    &--next {
+      .pagination__link {
+        padding: 0 7px;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 20px;
+    height: 20px;
+    background-color: var(--dnt-ap-pagination-bg);
+    border: 1px solid var(--dnt-ap-pagination-bg);
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+
+    &--prev {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    svg {
+      display: flex;
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

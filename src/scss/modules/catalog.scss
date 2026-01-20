@@ -1,0 +1,25 @@
+@use "../core" as *;
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px 10px;
+  }
+}

@@ -1,0 +1,55 @@
+@use "../core" as *;
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &.active {
+      .faq__header {
+        border-bottom-color: transparent;
+      }
+      .faq__body {
+        height: 100%;
+      }
+      .faq__icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--dnt-ap-faq-title);
+    border-bottom: 1px solid var(--dnt-ap-c-black);
+    transition: .2s ease;
+    cursor: pointer;
+  }
+
+  &__body {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dnt-ap-faq-text);
+    height: 0;
+    overflow: hidden;
+    transition: .2s ease;
+  }
+
+  &__icon {
+    display: flex;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    transition: .2s ease;
+  }
+}
