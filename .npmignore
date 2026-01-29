@@ -1,0 +1,26 @@
+# Исходники (кроме SCSS)
+src/js/
+src/lib/
+src/*.ts
+src/*.html
+src/assets/
+
+# Конфигурация
+config/
+webpack.config.ts
+webpack.lib.config.ts
+tsconfig.json
+
+# Документация разработчика
+DOCUMENTATION.md
+
+# Разработка
+node_modules/
+*.log
+.DS_Store
+
+# Временные файлы
+dist/bundle.js
+dist/main.css
+dist/*.html
+

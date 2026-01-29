@@ -1,0 +1,35 @@
+/**
+ * Пример кастомизации стилей DNT-AP через SCSS
+ */
+
+// Импорт всех стилей библиотеки
+@use "dnt-ap/styles/scss" as *;
+
+// Переопределение переменных
+$font-main: 'Roboto', 'Arial', sans-serif;
+$size-mobile: 768px;
+
+// Переопределение CSS переменных
+:root {
+  --dnt-ap-c-background: #f5f5f5;
+  --dnt-ap-c-black: #333333;
+  --dnt-ap-container-width: 1200px;
+  --dnt-ap-button-bg: #007bff;
+  --dnt-ap-button-shadow: #0056b3;
+}
+
+// Использование миксинов библиотеки
+.my-custom-component {
+  @include response($size-mobile) {
+    padding: 10px;
+  }
+  
+  @include response-mob($size-mobile + 1) {
+    padding: 20px;
+  }
+}
+
+// Импорт отдельных компонентов (если нужны только некоторые)
+// @use "dnt-ap/styles/scss/ui/button" as *;
+// @use "dnt-ap/styles/scss/ui/input" as *;
+

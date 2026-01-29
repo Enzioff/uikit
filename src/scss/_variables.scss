@@ -1,8 +1,8 @@
-// Basic
+// Basic SCSS variables (используются во внутренних стилях)
 $font-main: 'Arial', sans-serif;
 $size-mobile: 1199;
 
-// Colors
+// Фундаментальные цвета
 $background-white: #FFFFFF;
 $background-black: #000000;
 $white: #FFFFFF;
@@ -15,43 +15,102 @@ $gray-light: #F3F3F3;
 $demo-bg: #EDEDED;
 $error: #E60B0F;
 
+// Design tokens (CSS Custom Properties)
 :root {
-  --dnt-ap-c-background: #{$background-white};
-  --dnt-ap-c-white: #{$white};
-  --dnt-ap-c-black: #{$black};
-  --dnt-ap-c-gray: #{$gray};
-  --dnt-ap-c-gray-dark: #{$gray-dark};
-  --dnt-ap-c-error: #{$error};
+  /* ========= FOUNDATION: COLORS ========= */
+  --dnt-ap-color-white: #{$white};
+  --dnt-ap-color-black: #{$black};
 
-  --dnt-ap-container-width: 1240px;
-  --dnt-ap-container-padding: 0 20px;
+  --dnt-ap-color-gray-50:  #F9F9F9;
+  --dnt-ap-color-gray-100: #{$gray-light};
+  --dnt-ap-color-gray-200: #{$gray};
+  --dnt-ap-color-gray-400: #{$gray-accent};
+  --dnt-ap-color-gray-600: #{$gray-dark};
+  --dnt-ap-color-gray-800: #333333;
 
-  --dnt-ap-grid-gap: 20px;
-  --dnt-ap-grid-gap-mob: 20px;
+  --dnt-ap-color-error: #{$error};
 
-  --dnt-ap-header-bg: #{$white};
-  --dnt-ap-header-link: #{$gray-dark};
-  --dnt-ap-header-link-hover: #{$gray};
+  /* ========= FOUNDATION: TYPOGRAPHY ========= */
+  --dnt-ap-font-family-base: #{$font-main};
+  --dnt-ap-font-size-base: 16px;
+  --dnt-ap-line-height-base: 1.2;
+  --dnt-ap-font-weight-regular: 400;
+  --dnt-ap-font-weight-medium: 500;
+  --dnt-ap-font-weight-bold: 700;
 
-  --dnt-ap-button-bg: #{$gray};
-  --dnt-ap-button-shadow: #{$gray-dark};
-  --dnt-ap-button-border: #{$gray-dark};
-  --dnt-ap-button-border-active: #{$gray-dark};
+  /* ========= FOUNDATION: SPACING ========= */
+  --dnt-ap-space-0: 0;
+  --dnt-ap-space-1: 4px;
+  --dnt-ap-space-2: 8px;
+  --dnt-ap-space-3: 12px;
+  --dnt-ap-space-4: 16px;
+  --dnt-ap-space-5: 20px;
+  --dnt-ap-space-6: 24px;
+  --dnt-ap-space-7: 32px;
 
-  --dnt-ap-checkbox-icon: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxOCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3IDFMNiAxMkwxIDciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=);
-  --dnt-ap-checkbox-bg: #{$white};
-  --dnt-ap-checkbox-bg-active: #{$white};
-  --dnt-ap-checkbox-border: #{$gray};
-  --dnt-ap-checkbox-border-active: #{$gray-dark};
+  /* ========= FOUNDATION: RADII ========= */
+  --dnt-ap-radius-none: 0;
+  --dnt-ap-radius-sm: 4px;
+  --dnt-ap-radius-md: 8px;
+  --dnt-ap-radius-lg: 12px;
+  --dnt-ap-radius-pill: 999px;
 
-  --dnt-ap-input-text: #{$black};
-  --dnt-ap-input-border: #{$black};
+  /* ========= FOUNDATION: SHADOWS ========= */
+  --dnt-ap-shadow-none: none;
+  --dnt-ap-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --dnt-ap-shadow-md: 0 4px 10px rgba(0, 0, 0, 0.12);
 
+  /* ========= FOUNDATION: LAYOUT ========= */
+  --dnt-ap-layout-container-width: 1240px;
+  --dnt-ap-layout-container-padding: 0 20px;
+  --dnt-ap-layout-grid-gap: 20px;
+  --dnt-ap-layout-grid-gap-mobile: 20px;
+
+  /* ========= SEMANTIC: SURFACES ========= */
+  --dnt-ap-surface-page: var(--dnt-ap-color-white);
+  --dnt-ap-surface-card: var(--dnt-ap-color-white);
+  --dnt-ap-surface-header: var(--dnt-ap-color-white);
+  --dnt-ap-surface-footer: var(--dnt-ap-color-gray-50);
+
+  /* ========= SEMANTIC: TEXT ========= */
+  --dnt-ap-text-primary: var(--dnt-ap-color-black);
+  --dnt-ap-text-secondary: var(--dnt-ap-color-gray-600);
+  --dnt-ap-text-muted: var(--dnt-ap-color-gray-400);
+  --dnt-ap-text-inverse: var(--dnt-ap-color-white);
+  --dnt-ap-text-error: var(--dnt-ap-color-error);
+
+  /* ========= SEMANTIC: BORDERS ========= */
+  --dnt-ap-border-subtle: var(--dnt-ap-color-gray-200);
+  --dnt-ap-border-strong: var(--dnt-ap-color-gray-600);
+  --dnt-ap-border-error: var(--dnt-ap-color-error);
+
+  /* ========= SEMANTIC: BUTTON ========= */
+  --dnt-ap-button-bg: var(--dnt-ap-color-gray-200);
+  --dnt-ap-button-bg-hover: var(--dnt-ap-color-gray-400);
+  --dnt-ap-button-text: var(--dnt-ap-text-primary);
+  --dnt-ap-button-border: var(--dnt-ap-border-strong);
+  --dnt-ap-button-border-active: var(--dnt-ap-border-strong);
+  --dnt-ap-button-shadow: var(--dnt-ap-shadow-sm);
+
+  /* ========= SEMANTIC: INPUT ========= */
+  --dnt-ap-input-bg: var(--dnt-ap-color-white);
+  --dnt-ap-input-text: var(--dnt-ap-text-primary);
+  --dnt-ap-input-placeholder: var(--dnt-ap-text-muted);
+  --dnt-ap-input-border: var(--dnt-ap-border-strong);
+  --dnt-ap-input-border-error: var(--dnt-ap-border-error);
+
+  /* ========= SEMANTIC: HEADER ========= */
+  --dnt-ap-header-bg: var(--dnt-ap-surface-header);
+  --dnt-ap-header-link: var(--dnt-ap-text-secondary);
+  --dnt-ap-header-link-hover: var(--dnt-ap-text-muted);
+
+  /* ========= SEMANTIC: SEARCH ========= */
   --dnt-ap-search-icon-bg: #{$gray-light};
   --dnt-ap-search-bg: #{$gray};
   --dnt-ap-search-placeholder: #{$gray-dark};
   --dnt-ap-search-text: #{$black};
 
+  /* ========= SEMANTIC: SELECT ========= */
   --dnt-ap-select-text: #{$black};
   --dnt-ap-select-bg: #{$gray};
   --dnt-ap-select-bg-hover: #{$black-hover};
@@ -59,16 +118,20 @@ $error: #E60B0F;
   --dnt-ap-select-icon-arrow-active: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuNSAxMS45NjEyTDEwIDYuMDM4MDlMMTUuNSAxMS45NjEyIiBzdHJva2U9IiMxMTExMTEiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
   --dnt-ap-select-icon-filter: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuNSA2LjMwOTgxSDQuNDMxMDNNMTAuODc5NCA2LjMwOTgxSDE4LjUwMDFNMS41IDE1LjY4OTFIMTAuMjkzMU0xNi43NDEzIDE1LjY4OTFIMTguNDk5OU0xMC4yOTMzIDYuMzA5ODFDMTAuMjkzMyA3Ljc2NjcgOS4xMTIyOCA4Ljk0Nzc0IDcuNjU1MzkgOC45NDc3NEM2LjE5ODUgOC45NDc3NCA1LjAxNzQ2IDcuNzY2NyA1LjAxNzQ2IDYuMzA5ODFDNS4wMTc0NiA0Ljg1MjkyIDYuMTk4NSAzLjY3MTg4IDcuNjU1MzkgMy42NzE4OEM5LjExMjI4IDMuNjcxODggMTAuMjkzMyA0Ljg1MjkyIDEwLjI5MzMgNi4zMDk4MVpNMTYuMTU1MiAxNS42ODkxQzE2LjE1NTIgMTcuMTQ2IDE0Ljk3NDIgMTguMzI3MSAxMy41MTczIDE4LjMyNzFDMTIuMDYwNCAxOC4zMjcxIDEwLjg3OTQgMTcuMTQ2IDEwLjg3OTQgMTUuNjg5MUMxMC44Nzk0IDE0LjIzMjIgMTIuMDYwNCAxMy4wNTEyIDEzLjUxNzMgMTMuMDUxMkMxNC45NzQyIDEzLjA1MTIgMTYuMTU1MiAxNC4yMzIyIDE2LjE1NTIgMTUuNjg5MVoiIHN0cm9rZT0iIzExMTExMSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
 
+  /* ========= SEMANTIC: TAG ========= */
   --dnt-ap-tag-bg: #{$gray};
   --dnt-ap-tag-text: #{$black};
 
+  /* ========= SEMANTIC: PAGINATION ========= */
   --dnt-ap-pagination-bg: #{$gray};
   --dnt-ap-pagination-text: #{$black};
   --dnt-ap-pagination-border: #{$gray-dark};
 
+  /* ========= SEMANTIC: FAQ ========= */
   --dnt-ap-faq-title: #{$black};
   --dnt-ap-faq-text: #{$black};
 
+  /* ========= SEMANTIC: VARIOUS ========= */
   --dnt-ap-burger-color: #{$black};
 
   --dnt-ap-article-card-title: #{$black};
@@ -89,11 +152,32 @@ $error: #E60B0F;
   --dnt-ap-article-review-star-active: #{$gray-dark};
   --dnt-ap-article-review-text: #{$black};
   --dnt-ap-article-review-bg: #{$white};
+
+  /* ========= BACKWARD COMPAT (старые токены) ========= */
+  --dnt-ap-c-background: var(--dnt-ap-surface-page);
+  --dnt-ap-c-white: var(--dnt-ap-color-white);
+  --dnt-ap-c-black: var(--dnt-ap-color-black);
+  --dnt-ap-c-gray: var(--dnt-ap-color-gray-200);
+  --dnt-ap-c-gray-dark: var(--dnt-ap-color-gray-600);
+  --dnt-ap-c-error: var(--dnt-ap-color-error);
+
+  --dnt-ap-container-width: var(--dnt-ap-layout-container-width);
+  --dnt-ap-container-padding: var(--dnt-ap-layout-container-padding);
+
+  --dnt-ap-grid-gap: var(--dnt-ap-layout-grid-gap);
+  --dnt-ap-grid-gap-mob: var(--dnt-ap-layout-grid-gap-mobile);
 }
 
 // Themes
-.theme-black {
-  --dnt-ap-c-background: #{$background-black};
-  --dnt-ap-c-white: #{$black};
-  --dnt-ap-c-black: #{$white};
+.theme-black,
+.theme-dark {
+  --dnt-ap-surface-page: #{$background-black};
+  --dnt-ap-text-primary: #{$white};
+  --dnt-ap-text-secondary: #{$gray-light};
+  --dnt-ap-text-muted: #{$gray-accent};
+
+  // Сохраняем совместимость со старыми токенами
+  --dnt-ap-c-background: var(--dnt-ap-surface-page);
+  --dnt-ap-c-white: var(--dnt-ap-color-black);
+  --dnt-ap-c-black: var(--dnt-ap-color-white);
 }

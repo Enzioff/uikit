@@ -23,15 +23,18 @@ class Form {
     }
     
     init() {
-        this.updateAgreementStatus();
+        if (this.checkItem) {
+            this.updateAgreementStatus();
+            this.checkItem.addEventListener('change', this.updateAgreementStatus.bind(this));
+        }
         
-        this.checkItem.addEventListener('change', this.updateAgreementStatus.bind(this));
-        
-        this.sendButton.addEventListener('click', (evt) => {
-            evt.preventDefault();
-            
-            this.sendData(this.getData());
-        })
+        if (this.sendButton) {
+            this.sendButton.addEventListener('click', (evt) => {
+                evt.preventDefault();
+                
+                this.sendData(this.getData());
+            });
+        }
     }
     
     getData() {
@@ -71,6 +74,8 @@ class Form {
     }
     
     updateAgreementStatus() {
+        if (!this.checkItem || !this.sendButton) return;
+        
         if (this.checkItem.checked) {
             this.sendButton.removeAttribute('disabled');
         } else {
