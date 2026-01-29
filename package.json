@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/Enzioff/uikit.git"
   },
-  "author": "Roman Gromov",
+  "author": "enzioff",
   "license": "MIT",
   "files": [
     "dist/",
