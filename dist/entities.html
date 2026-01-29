@@ -18,20 +18,20 @@
                     <p class="demo__text">
                         v1 - стандарт
                     </p>
-                    <form action="#" class="form">
+                    <form action="#" class="form" data-form>
                         <fieldset class="form__wrapper">
                             <label class="form__item">
-                                <input class="input" type="text" placeholder="Имя">
+                                <input class="input" type="text" name="name" placeholder="Имя" required>
                             </label>
                             <label class="form__item">
-                                <input class="input" type="tel" placeholder="Телефон">
+                                <input class="input" type="tel" name="tel" placeholder="Телефон" required>
                             </label>
                             <label class="form__item">
-                                <textarea class="input input--area" placeholder="Комментарий"></textarea>
+                                <textarea class="input input--area" name="comments" placeholder="Комментарий"></textarea>
                             </label>
                         </fieldset>
                         <label class="form__agreement">
-                            <input type="checkbox" class="checkbox">
+                            <input type="checkbox" class="checkbox" data-form-check>
                             <span>
                                 Я принимаю <a href="#" target="_blank">пользовательское соглашение</a>, а также ознакомлен и согласен с <a
                                 href="#" target="_blank">политикой конфиденциальности</a>.

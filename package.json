@@ -11,7 +11,11 @@
     "version:major": "npm version major -m 'Upgrade to %s'",
     "release": "npm run build && npm publish"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enzioff/uikit.git"
+  },
+  "author": "Roman Gromov",
   "license": "MIT",
   "files": [
     "dist/",

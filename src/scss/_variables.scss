@@ -13,6 +13,7 @@ $gray-dark: #606060;
 $gray-accent: #9E9E9E;
 $gray-light: #F3F3F3;
 $demo-bg: #EDEDED;
+$error: #E60B0F;
 
 :root {
   --dnt-ap-c-background: #{$background-white};
@@ -20,6 +21,7 @@ $demo-bg: #EDEDED;
   --dnt-ap-c-black: #{$black};
   --dnt-ap-c-gray: #{$gray};
   --dnt-ap-c-gray-dark: #{$gray-dark};
+  --dnt-ap-c-error: #{$error};
 
   --dnt-ap-container-width: 1240px;
   --dnt-ap-container-padding: 0 20px;

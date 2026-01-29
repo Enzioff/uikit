@@ -70,7 +70,8 @@
     }
 
     .burger__item {
-      top: -4px;
+      width: 0;
+      opacity: 0;
     }
   }
 }
